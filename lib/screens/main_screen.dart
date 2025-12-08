@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'remotes_screen.dart';
 import 'settings_screen.dart';
+import 'form_screen.dart'; // ← Импортируем форму
 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
@@ -43,6 +44,15 @@ class MainScreen extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(builder: (context) => const SettingsScreen()),
+                          );
+                        },
+                      ),
+                      IconButton(
+                        icon: const Icon(Icons.person, color: Colors.white, size: 28),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => const FormScreen()),
                           );
                         },
                       ),
