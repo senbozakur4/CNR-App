@@ -16,7 +16,7 @@ class CnrApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: Colors.black,
       ),
-      home: const MainScreen(),
+      home: const MainScreen(), // ← Главный экран при запуске
     );
   }
 }
